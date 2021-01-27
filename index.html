@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Facebook</title>
+</head>
+
+<body>
+    <section id="login-area">
+        <h1 class="text-center mx-5">Welcome to Biswas Bank</h1>
+        <div class="submit-area mt-5 rounded border p-5 shadow">
+            <h4>Login</h4>
+            <input class="form-control m-3" type="email" name="" id="" placeholder="email">
+            <input class="form-control m-3" type="password" name="" id="" placeholder="password">
+            <button id="login" class="btn btn-success mx-3">Submit</button>
+        </div>
+    </section>
+    <section id="trangection-area">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="deposite status rounded">
+                    <h2>Deposite</h2>
+                    <h5>$ <span id="carrentDeposite">00</span></h5>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="withdraw status rounded">
+                    <h2>Withdraw</h2>
+                    <h5>$00</h5>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="balance status rounded">
+                    <h2>Balance</h2>
+                    <h5>$ <span id="carrentBalance">1200</span></h5>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="submit-area mt-5 rounded border p-5 shadow">
+                    <h4>Diposit</h4>
+                    <input id="depositAmount" type="text" class="form-control" placeholder="$ amount you want to Diposit">
+                    <br>
+                    <button id="addDiposit" class="btn btn-success">Diposit</button>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="submit-area mt-5 rounded border p-5 shadow">
+                    <h4>Withdraw</h4>
+                    <input id="withdrawAmount" type="text" class="form-control" placeholder="$ amount you want to Withdraw">
+                    <br>
+                    <button id="addWithdraw" class="btn btn-success">Withdraw</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./index.js"></script>
+</body>
+
+</html>
